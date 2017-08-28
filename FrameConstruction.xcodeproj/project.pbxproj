@@ -16,6 +16,13 @@
 		A57D98761F53BDC5003A9F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D98741F53BDC5003A9F22 /* LaunchScreen.storyboard */; };
 		A57D98811F53BDC5003A9F22 /* FrameConstructionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98801F53BDC5003A9F22 /* FrameConstructionTests.m */; };
 		A57D988C1F53BDC5003A9F22 /* FrameConstructionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D988B1F53BDC5003A9F22 /* FrameConstructionUITests.m */; };
+		A589E4711F53E5E500C9D04C /* MainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */; };
+		A589E4781F53E91100C9D04C /* scan_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A589E4721F53E91100C9D04C /* scan_1@2x.png */; };
+		A589E4791F53E91100C9D04C /* scan_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A589E4731F53E91100C9D04C /* scan_1@3x.png */; };
+		A589E47A1F53E91100C9D04C /* scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A589E4741F53E91100C9D04C /* scan@2x.png */; };
+		A589E47B1F53E91100C9D04C /* scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A589E4751F53E91100C9D04C /* scan@3x.png */; };
+		A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E4771F53E91100C9D04C /* ZHScanView.m */; };
+		A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E47E1F53EC3800C9D04C /* BasicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,16 @@
 		A57D98871F53BDC5003A9F22 /* FrameConstructionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameConstructionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D988B1F53BDC5003A9F22 /* FrameConstructionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameConstructionUITests.m; sourceTree = "<group>"; };
 		A57D988D1F53BDC5003A9F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbarViewController.h; sourceTree = "<group>"; };
+		A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbarViewController.m; sourceTree = "<group>"; };
+		A589E4721F53E91100C9D04C /* scan_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_1@2x.png"; sourceTree = "<group>"; };
+		A589E4731F53E91100C9D04C /* scan_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_1@3x.png"; sourceTree = "<group>"; };
+		A589E4741F53E91100C9D04C /* scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan@2x.png"; sourceTree = "<group>"; };
+		A589E4751F53E91100C9D04C /* scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan@3x.png"; sourceTree = "<group>"; };
+		A589E4761F53E91100C9D04C /* ZHScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHScanView.h; sourceTree = "<group>"; };
+		A589E4771F53E91100C9D04C /* ZHScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHScanView.m; sourceTree = "<group>"; };
+		A589E47D1F53EC3800C9D04C /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		A589E47E1F53EC3800C9D04C /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameConstruction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE1CC4298DA285D86E19A1 /* Pods-FrameConstruction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameConstruction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameConstruction/Pods-FrameConstruction.debug.xcconfig"; sourceTree = "<group>"; };
 		F65FBF5C9C7D9C80A65BB87D /* Pods-FrameConstruction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameConstruction.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameConstruction/Pods-FrameConstruction.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +142,18 @@
 		A57D98651F53BDC5003A9F22 /* FrameConstruction */ = {
 			isa = PBXGroup;
 			children = (
+				A589E4721F53E91100C9D04C /* scan_1@2x.png */,
+				A589E4731F53E91100C9D04C /* scan_1@3x.png */,
+				A589E4741F53E91100C9D04C /* scan@2x.png */,
+				A589E4751F53E91100C9D04C /* scan@3x.png */,
+				A589E4761F53E91100C9D04C /* ZHScanView.h */,
+				A589E4771F53E91100C9D04C /* ZHScanView.m */,
 				A57D98691F53BDC5003A9F22 /* AppDelegate.h */,
 				A57D986A1F53BDC5003A9F22 /* AppDelegate.m */,
+				A589E47D1F53EC3800C9D04C /* BasicViewController.h */,
+				A589E47E1F53EC3800C9D04C /* BasicViewController.m */,
+				A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */,
+				A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */,
 				A57D986C1F53BDC5003A9F22 /* ViewController.h */,
 				A57D986D1F53BDC5003A9F22 /* ViewController.m */,
 				A57D986F1F53BDC5003A9F22 /* Main.storyboard */,
@@ -276,9 +303,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A589E47B1F53E91100C9D04C /* scan@3x.png in Resources */,
 				A57D98761F53BDC5003A9F22 /* LaunchScreen.storyboard in Resources */,
 				A57D98731F53BDC5003A9F22 /* Assets.xcassets in Resources */,
 				A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */,
+				A589E4781F53E91100C9D04C /* scan_1@2x.png in Resources */,
+				A589E4791F53E91100C9D04C /* scan_1@3x.png in Resources */,
+				A589E47A1F53E91100C9D04C /* scan@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
 				A57D986E1F53BDC5003A9F22 /* ViewController.m in Sources */,
+				A589E4711F53E5E500C9D04C /* MainTabbarViewController.m in Sources */,
 				A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */,
 				A57D98681F53BDC5003A9F22 /* main.m in Sources */,
+				A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,11 +537,15 @@
 			baseConfigurationReference = E5FE1CC4298DA285D86E19A1 /* Pods-FrameConstruction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 俊虎 薄 (662S6B5LGB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
 				INFOPLIST_FILE = FrameConstruction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bill.FrameConstruction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -516,11 +554,14 @@
 			baseConfigurationReference = F65FBF5C9C7D9C80A65BB87D /* Pods-FrameConstruction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
 				INFOPLIST_FILE = FrameConstruction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bill.FrameConstruction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -593,6 +634,7 @@
 				A57D98921F53BDC5003A9F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A57D98931F53BDC5003A9F22 /* Build configuration list for PBXNativeTarget "FrameConstructionTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +643,7 @@
 				A57D98951F53BDC5003A9F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A57D98961F53BDC5003A9F22 /* Build configuration list for PBXNativeTarget "FrameConstructionUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +652,7 @@
 				A57D98981F53BDC5003A9F22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
