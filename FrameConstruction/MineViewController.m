@@ -1,25 +1,23 @@
 //
-//  BasicViewController.m
+//  MineViewController.m
 //  FrameConstruction
 //
 //  Created by BillBo on 2017/8/28.
 //  Copyright © 2017年 BillBo. All rights reserved.
 //
 
-#import "BasicViewController.h"
+#import "MineViewController.h"
 
-@interface BasicViewController ()
+@interface MineViewController ()
 
 @end
 
-@implementation BasicViewController
+@implementation MineViewController
 
 - (void)viewDidLoad {
-  
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.navigationItem.title = @"我的";
 }
 
 - (void)didReceiveMemoryWarning {

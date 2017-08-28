@@ -1,30 +1,35 @@
 //
-//  ViewController.m
+//  ScanViewController.m
 //  FrameConstruction
 //
 //  Created by BillBo on 2017/8/28.
 //  Copyright © 2017年 BillBo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ScanViewController.h"
+
 #import "ZHScanView.h"
-@interface ViewController (){
+
+@interface ScanViewController (){
     
     ZHScanView *scanView;
-
+    
 }
+
 
 @end
 
-@implementation ViewController
+@implementation ScanViewController
 
 - (void)viewDidLoad {
-    
+ 
     [super viewDidLoad];
-
+    
+    self.navigationItem.title = @"我的";
+    
     scanView = [[ZHScanView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width , self.view.frame.size.height)];
     
-
+    
     scanView.promptMessage = @"请扫描二维码";
     
     [scanView startScaning];
@@ -39,23 +44,12 @@
     
 }
 
-- (void)viewDidLayoutSubviews{
-    
-    [super viewDidLayoutSubviews];
-    
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
     
     [scanView scanAgain];
-    
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

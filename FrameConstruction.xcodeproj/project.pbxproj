@@ -10,7 +10,6 @@
 		2E3808DE5FFF1BE219F265E7 /* libPods-FrameConstruction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */; };
 		A57D98681F53BDC5003A9F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98671F53BDC5003A9F22 /* main.m */; };
 		A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986A1F53BDC5003A9F22 /* AppDelegate.m */; };
-		A57D986E1F53BDC5003A9F22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986D1F53BDC5003A9F22 /* ViewController.m */; };
 		A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D986F1F53BDC5003A9F22 /* Main.storyboard */; };
 		A57D98731F53BDC5003A9F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57D98721F53BDC5003A9F22 /* Assets.xcassets */; };
 		A57D98761F53BDC5003A9F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D98741F53BDC5003A9F22 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,9 @@
 		A589E47B1F53E91100C9D04C /* scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A589E4751F53E91100C9D04C /* scan@3x.png */; };
 		A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E4771F53E91100C9D04C /* ZHScanView.m */; };
 		A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E47E1F53EC3800C9D04C /* BasicViewController.m */; };
+		A589E4821F53F14700C9D04C /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A589E4811F53F14700C9D04C /* ScanViewController.m */; };
+		A5F2EB331F53F3B800E534E4 /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */; };
+		A5F2EB361F53F3C100E534E4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F2EB351F53F3C100E534E4 /* MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,6 @@
 		A57D98671F53BDC5003A9F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A57D98691F53BDC5003A9F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A57D986A1F53BDC5003A9F22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A57D986C1F53BDC5003A9F22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A57D986D1F53BDC5003A9F22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A57D98701F53BDC5003A9F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A57D98721F53BDC5003A9F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A57D98751F53BDC5003A9F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +69,12 @@
 		A589E4771F53E91100C9D04C /* ZHScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHScanView.m; sourceTree = "<group>"; };
 		A589E47D1F53EC3800C9D04C /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		A589E47E1F53EC3800C9D04C /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		A589E4801F53F14700C9D04C /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		A589E4811F53F14700C9D04C /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
+		A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
+		A5F2EB341F53F3C100E534E4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		A5F2EB351F53F3C100E534E4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameConstruction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FE1CC4298DA285D86E19A1 /* Pods-FrameConstruction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameConstruction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameConstruction/Pods-FrameConstruction.debug.xcconfig"; sourceTree = "<group>"; };
 		F65FBF5C9C7D9C80A65BB87D /* Pods-FrameConstruction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameConstruction.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameConstruction/Pods-FrameConstruction.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,8 +160,12 @@
 				A589E47E1F53EC3800C9D04C /* BasicViewController.m */,
 				A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */,
 				A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */,
-				A57D986C1F53BDC5003A9F22 /* ViewController.h */,
-				A57D986D1F53BDC5003A9F22 /* ViewController.m */,
+				A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */,
+				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
+				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
+				A5F2EB351F53F3C100E534E4 /* MineViewController.m */,
+				A589E4801F53F14700C9D04C /* ScanViewController.h */,
+				A589E4811F53F14700C9D04C /* ScanViewController.m */,
 				A57D986F1F53BDC5003A9F22 /* Main.storyboard */,
 				A57D98721F53BDC5003A9F22 /* Assets.xcassets */,
 				A57D98741F53BDC5003A9F22 /* LaunchScreen.storyboard */,
@@ -382,10 +392,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F2EB331F53F3B800E534E4 /* HomepageViewController.m in Sources */,
 				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
-				A57D986E1F53BDC5003A9F22 /* ViewController.m in Sources */,
+				A5F2EB361F53F3C100E534E4 /* MineViewController.m in Sources */,
 				A589E4711F53E5E500C9D04C /* MainTabbarViewController.m in Sources */,
 				A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */,
+				A589E4821F53F14700C9D04C /* ScanViewController.m in Sources */,
 				A57D98681F53BDC5003A9F22 /* main.m in Sources */,
 				A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */,
 			);

@@ -8,30 +8,99 @@
 
 #import "MainTabbarViewController.h"
 
+#import "HomepageViewController.h"
+
+#import "ScanViewController.h"
+
+#import "MineViewController.h"
+
 @interface MainTabbarViewController ()
+
 
 @end
 
 @implementation MainTabbarViewController
 
 - (void)viewDidLoad {
+   
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, -8, self.tabBar.frame.size.width, self.tabBar.frame.size.height)];
+    
+    [imageView setImage:[UIImage imageNamed:@"tabbar_bg"]];
+    
+    [imageView setContentMode:UIViewContentModeCenter];
+    
+    [self.tabBar insertSubview:imageView atIndex:0];
+    
+    //覆盖原生Tabbar的上横线
+    
+    [[UITabBar appearance] setShadowImage:[self createImageWithColor:[UIColor clearColor]]];
+    
+    [[UITabBar appearance] setBackgroundImage:[self createImageWithColor:[UIColor clearColor]]];
+    
+    //设置TintColor
+    UITabBar.appearance.tintColor = [UIColor blueColor];
+
+    [self addChildVC:[[HomepageViewController alloc] init] title:@"首页" selectedImageName:@"TabBar_Item_1_selected" nomalImageName:@"TabBar_Item_1"];
+    
+    [self addChildVC:[[ScanViewController alloc]init] title:@"" selectedImageName:@"btn_card_selected" nomalImageName:@"btn_card"];
+    
+    [self addChildVC:[[MineViewController alloc] init] title:@"我的" selectedImageName:@"TabBar_Item_5_selected" nomalImageName:@"TabBar_Item_5"];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(UIImage*) createImageWithColor:(UIColor*) color {
+    
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+  
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    
+    CGContextFillRect(context, rect);
+    
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return theImage;
+
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 设置中间按钮不受TintColor影响
+
+- (void)awakeFromNib {
+   
+    [super awakeFromNib];
+    
+    NSArray *items =  self.tabBar.items;
+    
+    UITabBarItem *btnAdd = items[2];
+    
+    btnAdd.image = [btnAdd.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    btnAdd.selectedImage = [btnAdd.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
 }
-*/
+
+- (void)addChildVC:(UIViewController *)vc title:(NSString *)title selectedImageName:(NSString *)selectedImage nomalImageName:(NSString *)nomalImageName {
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    
+    vc.tabBarItem.image = [UIImage imageNamed:nomalImageName];
+    
+    vc.tabBarItem.title = title;
+    
+    [self addChildViewController:nav];
+    
+}
+
 
 @end

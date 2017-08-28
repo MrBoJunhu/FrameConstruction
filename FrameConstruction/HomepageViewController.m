@@ -1,25 +1,24 @@
 //
-//  BasicViewController.m
+//  HomepageViewController.m
 //  FrameConstruction
 //
 //  Created by BillBo on 2017/8/28.
 //  Copyright © 2017年 BillBo. All rights reserved.
 //
 
-#import "BasicViewController.h"
+#import "HomepageViewController.h"
 
-@interface BasicViewController ()
+@interface HomepageViewController ()
 
 @end
 
-@implementation BasicViewController
+@implementation HomepageViewController
 
 - (void)viewDidLoad {
-  
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationItem.title = @"主页";
+
 }
 
 - (void)didReceiveMemoryWarning {
