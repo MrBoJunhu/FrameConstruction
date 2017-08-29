@@ -24,11 +24,12 @@
 - (void)viewDidLoad {
  
     [super viewDidLoad];
-    
+
     self.navigationItem.title = @"我的";
     
     scanView = [[ZHScanView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width , self.view.frame.size.height)];
     
+    scanView.backgroundColor = [UIColor lightGrayColor];
     
     scanView.promptMessage = @"请扫描二维码";
     

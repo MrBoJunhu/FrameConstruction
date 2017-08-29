@@ -44,7 +44,7 @@
 
     [self addChildVC:[[HomepageViewController alloc] init] title:@"首页" selectedImageName:@"TabBar_Item_1_selected" nomalImageName:@"TabBar_Item_1"];
     
-    [self addChildVC:[[ScanViewController alloc]init] title:@"" selectedImageName:@"btn_card_selected" nomalImageName:@"btn_card"];
+    [self addChildVC:[[ScanViewController alloc]init] title:@"扫一扫" selectedImageName:@"tabbaritem_selected_动态" nomalImageName:@"tabbaritem_动态"];
     
     [self addChildVC:[[MineViewController alloc] init] title:@"我的" selectedImageName:@"TabBar_Item_5_selected" nomalImageName:@"TabBar_Item_5"];
     

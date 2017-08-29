@@ -10,6 +10,8 @@
 
 #import "MainTabbarViewController.h"
 
+#import "AppDelegate+Setting.h"
+
 @interface AppDelegate ()
 
 @end
@@ -18,12 +20,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
+    [self test];
+    
     MainTabbarViewController *mainVC = [[MainTabbarViewController alloc] init];
     
-    self.window.rootViewController = mainVC;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = mainVC;
     
     return YES;
 }

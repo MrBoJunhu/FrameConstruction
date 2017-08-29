@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E3808DE5FFF1BE219F265E7 /* libPods-FrameConstruction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */; };
+		A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */; };
 		A57D98681F53BDC5003A9F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98671F53BDC5003A9F22 /* main.m */; };
 		A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986A1F53BDC5003A9F22 /* AppDelegate.m */; };
 		A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D986F1F53BDC5003A9F22 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Setting.h"; sourceTree = "<group>"; };
+		A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Setting.m"; sourceTree = "<group>"; };
 		A57D98631F53BDC5003A9F22 /* FrameConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D98671F53BDC5003A9F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A57D98691F53BDC5003A9F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A513E7591F5412B000FD79A7 /* TabbarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */,
+				A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */,
+			);
+			name = TabbarControllers;
+			sourceTree = "<group>";
+		};
 		A57D985A1F53BDC5003A9F22 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +160,7 @@
 		A57D98651F53BDC5003A9F22 /* FrameConstruction */ = {
 			isa = PBXGroup;
 			children = (
+				A513E7591F5412B000FD79A7 /* TabbarControllers */,
 				A589E4721F53E91100C9D04C /* scan_1@2x.png */,
 				A589E4731F53E91100C9D04C /* scan_1@3x.png */,
 				A589E4741F53E91100C9D04C /* scan@2x.png */,
@@ -156,10 +169,10 @@
 				A589E4771F53E91100C9D04C /* ZHScanView.m */,
 				A57D98691F53BDC5003A9F22 /* AppDelegate.h */,
 				A57D986A1F53BDC5003A9F22 /* AppDelegate.m */,
+				A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */,
+				A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */,
 				A589E47D1F53EC3800C9D04C /* BasicViewController.h */,
 				A589E47E1F53EC3800C9D04C /* BasicViewController.m */,
-				A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */,
-				A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */,
 				A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */,
 				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
 				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
@@ -399,6 +412,7 @@
 				A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */,
 				A589E4821F53F14700C9D04C /* ScanViewController.m in Sources */,
 				A57D98681F53BDC5003A9F22 /* main.m in Sources */,
+				A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */,
 				A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
