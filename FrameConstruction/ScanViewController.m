@@ -25,7 +25,7 @@
  
     [super viewDidLoad];
 
-    self.navigationItem.title = @"我的";
+    self.navigationItem.title = @"扫一扫";
     
     scanView = [[ZHScanView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width , self.view.frame.size.height)];
     

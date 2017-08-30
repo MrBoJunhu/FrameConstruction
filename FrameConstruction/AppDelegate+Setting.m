@@ -21,13 +21,15 @@
                                                           }];
     //设置不透明
     [UINavigationBar appearance].translucent = NO;
-    
     //导航栏颜色
-    [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+
+    
     
     //工具栏
-    [[UITabBar appearance] setTintColor:[UIColor lightGrayColor]];
-    
+    [[UITabBar appearance] setBarTintColor:[UIColor redColor]];
+    //工具栏背景色
+    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
 }
 
 @end

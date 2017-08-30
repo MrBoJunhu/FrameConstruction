@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  FrameConstruction
+//
+//  Created by BillBo on 2017/8/29.
+//  Copyright © 2017年 BillBo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PublicClassesHeader.h"
+
+#define weakify(x)autoreleasepool{} __weak typeof(x)weak##x=x;
+
+#endif /* PrefixHeader_pch */

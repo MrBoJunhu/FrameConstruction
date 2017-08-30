@@ -16,7 +16,6 @@
 
 @interface MainTabbarViewController ()
 
-
 @end
 
 @implementation MainTabbarViewController
@@ -34,13 +33,10 @@
     [self.tabBar insertSubview:imageView atIndex:0];
     
     //覆盖原生Tabbar的上横线
-    
     [[UITabBar appearance] setShadowImage:[self createImageWithColor:[UIColor clearColor]]];
     
     [[UITabBar appearance] setBackgroundImage:[self createImageWithColor:[UIColor clearColor]]];
     
-    //设置TintColor
-    UITabBar.appearance.tintColor = [UIColor blueColor];
 
     [self addChildVC:[[HomepageViewController alloc] init] title:@"首页" selectedImageName:@"TabBar_Item_1_selected" nomalImageName:@"TabBar_Item_1"];
     
@@ -87,20 +83,5 @@
     btnAdd.selectedImage = [btnAdd.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
 }
-
-- (void)addChildVC:(UIViewController *)vc title:(NSString *)title selectedImageName:(NSString *)selectedImage nomalImageName:(NSString *)nomalImageName {
-    
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    
-    vc.tabBarItem.image = [UIImage imageNamed:nomalImageName];
-    
-    vc.tabBarItem.title = title;
-    
-    [self addChildViewController:nav];
-    
-}
-
 
 @end

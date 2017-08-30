@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		2E3808DE5FFF1BE219F265E7 /* libPods-FrameConstruction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */; };
 		A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */; };
+		A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1AE1F554C810017BE25 /* UITabBarController+Category.m */; };
+		A54BC1B21F554D580017BE25 /* SecondUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1B11F554D580017BE25 /* SecondUITabBarController.m */; };
+		A54BC1B71F554DA50017BE25 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1B61F554DA50017BE25 /* FindViewController.m */; };
+		A54BC1BA1F554DB30017BE25 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1B91F554DB30017BE25 /* ContactsViewController.m */; };
+		A54BC1BD1F554DBB0017BE25 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1BC1F554DBB0017BE25 /* ChatViewController.m */; };
+		A54BC1C01F5551010017BE25 /* FindDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1BF1F5551010017BE25 /* FindDetailViewController.m */; };
+		A54BC1C31F55510B0017BE25 /* ChatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1C21F55510B0017BE25 /* ChatDetailViewController.m */; };
+		A54BC1C61F5551170017BE25 /* ContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1C51F5551170017BE25 /* ContactsDetailViewController.m */; };
+		A54BC1C91F55558D0017BE25 /* BBUIBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1C81F55558D0017BE25 /* BBUIBarButtonItem.m */; };
+		A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1CB1F5557150017BE25 /* UIViewController+Category.m */; };
 		A57D98681F53BDC5003A9F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98671F53BDC5003A9F22 /* main.m */; };
 		A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986A1F53BDC5003A9F22 /* AppDelegate.m */; };
 		A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D986F1F53BDC5003A9F22 /* Main.storyboard */; };
@@ -48,6 +58,28 @@
 /* Begin PBXFileReference section */
 		A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Setting.h"; sourceTree = "<group>"; };
 		A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Setting.m"; sourceTree = "<group>"; };
+		A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A54BC1AC1F554C390017BE25 /* PublicClassesHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicClassesHeader.h; sourceTree = "<group>"; };
+		A54BC1AD1F554C810017BE25 /* UITabBarController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+Category.h"; sourceTree = "<group>"; };
+		A54BC1AE1F554C810017BE25 /* UITabBarController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+Category.m"; sourceTree = "<group>"; };
+		A54BC1B01F554D580017BE25 /* SecondUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondUITabBarController.h; sourceTree = "<group>"; };
+		A54BC1B11F554D580017BE25 /* SecondUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondUITabBarController.m; sourceTree = "<group>"; };
+		A54BC1B51F554DA50017BE25 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		A54BC1B61F554DA50017BE25 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		A54BC1B81F554DB30017BE25 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		A54BC1B91F554DB30017BE25 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		A54BC1BB1F554DBB0017BE25 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		A54BC1BC1F554DBB0017BE25 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		A54BC1BE1F5551010017BE25 /* FindDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindDetailViewController.h; sourceTree = "<group>"; };
+		A54BC1BF1F5551010017BE25 /* FindDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindDetailViewController.m; sourceTree = "<group>"; };
+		A54BC1C11F55510B0017BE25 /* ChatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDetailViewController.h; sourceTree = "<group>"; };
+		A54BC1C21F55510B0017BE25 /* ChatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDetailViewController.m; sourceTree = "<group>"; };
+		A54BC1C41F5551170017BE25 /* ContactsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsDetailViewController.h; sourceTree = "<group>"; };
+		A54BC1C51F5551170017BE25 /* ContactsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsDetailViewController.m; sourceTree = "<group>"; };
+		A54BC1C71F55558D0017BE25 /* BBUIBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUIBarButtonItem.h; sourceTree = "<group>"; };
+		A54BC1C81F55558D0017BE25 /* BBUIBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUIBarButtonItem.m; sourceTree = "<group>"; };
+		A54BC1CA1F5557150017BE25 /* UIViewController+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
+		A54BC1CB1F5557150017BE25 /* UIViewController+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
 		A57D98631F53BDC5003A9F22 /* FrameConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D98671F53BDC5003A9F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A57D98691F53BDC5003A9F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,8 +163,114 @@
 			children = (
 				A589E46F1F53E5E500C9D04C /* MainTabbarViewController.h */,
 				A589E4701F53E5E500C9D04C /* MainTabbarViewController.m */,
+				A54BC1B01F554D580017BE25 /* SecondUITabBarController.h */,
+				A54BC1B11F554D580017BE25 /* SecondUITabBarController.m */,
 			);
 			name = TabbarControllers;
+			sourceTree = "<group>";
+		};
+		A54BC1941F553FA80017BE25 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A57D98691F53BDC5003A9F22 /* AppDelegate.h */,
+				A57D986A1F53BDC5003A9F22 /* AppDelegate.m */,
+				A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */,
+				A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */,
+			);
+			name = Appdelegate;
+			sourceTree = "<group>";
+		};
+		A54BC1951F553FC40017BE25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A54BC1961F553FD40017BE25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A54BC1971F553FDD0017BE25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A54BC1981F553FE50017BE25 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC1AD1F554C810017BE25 /* UITabBarController+Category.h */,
+				A54BC1AE1F554C810017BE25 /* UITabBarController+Category.m */,
+				A54BC1CA1F5557150017BE25 /* UIViewController+Category.h */,
+				A54BC1CB1F5557150017BE25 /* UIViewController+Category.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		A54BC1991F553FF10017BE25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC19A1F5540090017BE25 /* ViewControllers */,
+				A513E7591F5412B000FD79A7 /* TabbarControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A54BC19A1F5540090017BE25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC1B41F554D7D0017BE25 /* SecondVCs */,
+				A54BC1B31F554D660017BE25 /* HomeVCs */,
+				A589E47D1F53EC3800C9D04C /* BasicViewController.h */,
+				A589E47E1F53EC3800C9D04C /* BasicViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A54BC1A51F5548EB0017BE25 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC1C71F55558D0017BE25 /* BBUIBarButtonItem.h */,
+				A54BC1C81F55558D0017BE25 /* BBUIBarButtonItem.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		A54BC1B31F554D660017BE25 /* HomeVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */,
+				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
+				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
+				A5F2EB351F53F3C100E534E4 /* MineViewController.m */,
+				A589E4801F53F14700C9D04C /* ScanViewController.h */,
+				A589E4811F53F14700C9D04C /* ScanViewController.m */,
+			);
+			name = HomeVCs;
+			sourceTree = "<group>";
+		};
+		A54BC1B41F554D7D0017BE25 /* SecondVCs */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC1B51F554DA50017BE25 /* FindViewController.h */,
+				A54BC1B61F554DA50017BE25 /* FindViewController.m */,
+				A54BC1B81F554DB30017BE25 /* ContactsViewController.h */,
+				A54BC1B91F554DB30017BE25 /* ContactsViewController.m */,
+				A54BC1BB1F554DBB0017BE25 /* ChatViewController.h */,
+				A54BC1BC1F554DBB0017BE25 /* ChatViewController.m */,
+				A54BC1BE1F5551010017BE25 /* FindDetailViewController.h */,
+				A54BC1BF1F5551010017BE25 /* FindDetailViewController.m */,
+				A54BC1C11F55510B0017BE25 /* ChatDetailViewController.h */,
+				A54BC1C21F55510B0017BE25 /* ChatDetailViewController.m */,
+				A54BC1C41F5551170017BE25 /* ContactsDetailViewController.h */,
+				A54BC1C51F5551170017BE25 /* ContactsDetailViewController.m */,
+			);
+			name = SecondVCs;
 			sourceTree = "<group>";
 		};
 		A57D985A1F53BDC5003A9F22 = {
@@ -160,30 +298,26 @@
 		A57D98651F53BDC5003A9F22 /* FrameConstruction */ = {
 			isa = PBXGroup;
 			children = (
-				A513E7591F5412B000FD79A7 /* TabbarControllers */,
+				A54BC1A51F5548EB0017BE25 /* Custom */,
+				A54BC1991F553FF10017BE25 /* Controllers */,
+				A54BC1981F553FE50017BE25 /* Category */,
+				A54BC1971F553FDD0017BE25 /* Resources */,
+				A54BC1961F553FD40017BE25 /* Views */,
+				A54BC1951F553FC40017BE25 /* Models */,
+				A54BC1941F553FA80017BE25 /* Appdelegate */,
 				A589E4721F53E91100C9D04C /* scan_1@2x.png */,
 				A589E4731F53E91100C9D04C /* scan_1@3x.png */,
 				A589E4741F53E91100C9D04C /* scan@2x.png */,
 				A589E4751F53E91100C9D04C /* scan@3x.png */,
 				A589E4761F53E91100C9D04C /* ZHScanView.h */,
 				A589E4771F53E91100C9D04C /* ZHScanView.m */,
-				A57D98691F53BDC5003A9F22 /* AppDelegate.h */,
-				A57D986A1F53BDC5003A9F22 /* AppDelegate.m */,
-				A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */,
-				A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */,
-				A589E47D1F53EC3800C9D04C /* BasicViewController.h */,
-				A589E47E1F53EC3800C9D04C /* BasicViewController.m */,
-				A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */,
-				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
-				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
-				A5F2EB351F53F3C100E534E4 /* MineViewController.m */,
-				A589E4801F53F14700C9D04C /* ScanViewController.h */,
-				A589E4811F53F14700C9D04C /* ScanViewController.m */,
 				A57D986F1F53BDC5003A9F22 /* Main.storyboard */,
 				A57D98721F53BDC5003A9F22 /* Assets.xcassets */,
 				A57D98741F53BDC5003A9F22 /* LaunchScreen.storyboard */,
 				A57D98771F53BDC5003A9F22 /* Info.plist */,
 				A57D98661F53BDC5003A9F22 /* Supporting Files */,
+				A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */,
+				A54BC1AC1F554C390017BE25 /* PublicClassesHeader.h */,
 			);
 			path = FrameConstruction;
 			sourceTree = "<group>";
@@ -406,14 +540,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F2EB331F53F3B800E534E4 /* HomepageViewController.m in Sources */,
+				A54BC1B71F554DA50017BE25 /* FindViewController.m in Sources */,
+				A54BC1C91F55558D0017BE25 /* BBUIBarButtonItem.m in Sources */,
+				A54BC1BD1F554DBB0017BE25 /* ChatViewController.m in Sources */,
+				A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */,
 				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
+				A54BC1BA1F554DB30017BE25 /* ContactsViewController.m in Sources */,
+				A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */,
 				A5F2EB361F53F3C100E534E4 /* MineViewController.m in Sources */,
+				A54BC1C01F5551010017BE25 /* FindDetailViewController.m in Sources */,
 				A589E4711F53E5E500C9D04C /* MainTabbarViewController.m in Sources */,
+				A54BC1C31F55510B0017BE25 /* ChatDetailViewController.m in Sources */,
 				A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */,
 				A589E4821F53F14700C9D04C /* ScanViewController.m in Sources */,
 				A57D98681F53BDC5003A9F22 /* main.m in Sources */,
+				A54BC1C61F5551170017BE25 /* ContactsDetailViewController.m in Sources */,
 				A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */,
 				A589E47F1F53EC3800C9D04C /* BasicViewController.m in Sources */,
+				A54BC1B21F554D580017BE25 /* SecondUITabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +710,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: 俊虎 薄 (662S6B5LGB)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = FrameConstruction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.bill;
@@ -583,6 +729,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = FrameConstruction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.bill;
