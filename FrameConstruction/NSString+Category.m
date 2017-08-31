@@ -32,4 +32,24 @@
     
 }
 
++ (NSString *)tranceDataToString:(id)object{
+    
+    if ([object isKindOfClass:[NSString class]]) {
+        
+        return object;
+        
+    }else if ([object isKindOfClass:[NSNumber class]]){
+        
+        NSNumber *afterTranceObject = object;
+        
+        return afterTranceObject.stringValue;
+        
+    }else{
+        
+        return @"";
+    }
+    
+}
+
+
 @end

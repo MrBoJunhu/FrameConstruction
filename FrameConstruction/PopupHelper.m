@@ -18,6 +18,11 @@
 
 @property (nonatomic, copy) NSString *title;
 
+@property (nonatomic, copy) NSString *sureTitle;
+
+@property (nonatomic, copy) NSString *cancelTitle;
+
+
 @property (nonatomic, copy) NSString *msg;
 
 
@@ -36,9 +41,13 @@
     return helper;
 }
 
--(void)showPopupWithTitle:(NSString *)title message:(NSString *)message popupStyle:(PopupStyle)style viewController:(UIViewController *)controller clickSure:(clickSureBlock)sure clickCancel:(cancelBlock)cancel {
+-(void)showPopupWithTitle:(NSString *)title message:(NSString *)message sureButtonTitle:(NSString *)sureTitle cancelTitle:(NSString *)cancelTitle popupStyle:(PopupStyle)style viewController:(UIViewController *)controller clickSure:(clickSureBlock)sure clickCancel:(cancelBlock)cancel {
     
     self.title = title;
+    
+    self.sureTitle = sureTitle.length > 0 ? sureTitle :@"确定";
+    
+    self.cancelTitle = cancelTitle.length > 0 ? cancelTitle : @"取消";
     
     self.msg = message.length > 0 ? message : @"";
     
@@ -49,6 +58,11 @@
     self.cancelBlock = cancel;
     
     switch (style) {
+        case OnleyMessage_PopupStyle:
+        {
+            [self messagePopupDoNothing];
+        }
+            break;
         case TextField_PopupStyle:
         {
             [self textFieldPopup];
@@ -60,6 +74,29 @@
     }
     
 }
+
+- (void)messagePopupDoNothing {
+    
+    @weakify(self);
+    
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:self.title message:self.msg preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertC addAction:[UIAlertAction actionWithTitle:self.sureTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+       
+        if (weakself.sureBlock) {
+            
+            weakself.sureBlock(nil);
+            
+        }
+        
+    }]];
+    
+    [self.controller presentViewController:alertC animated:YES completion:^{
+        
+    }];
+    
+}
+
 
 
 - (void)textFieldPopup{
@@ -78,7 +115,7 @@
         
     }];
     
-    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle:self.cancelTitle style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         
         if (weakself.cancelBlock) {
             
@@ -88,7 +125,7 @@
         
     }]];
     
-    [alert addAction:[UIAlertAction actionWithTitle:@"确定"
+    [alert addAction:[UIAlertAction actionWithTitle:self.sureTitle
                                               style:UIAlertActionStyleDefault
                                             handler:^(UIAlertAction *action) {
                                                 

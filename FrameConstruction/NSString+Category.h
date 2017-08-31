@@ -49,5 +49,14 @@
  */
 +(CGFloat )widthForString:(NSString *)givenString fontSize:(CGFloat)fontSize;
 
+
+/**
+ 对象转String
+
+ @param object object description
+ @return return value description
+ */
++ (NSString *)tranceDataToString:(id)object;
+
 @end
 

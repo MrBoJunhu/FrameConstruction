@@ -15,4 +15,7 @@
 //第三方
 #import "ThirdHeader.h"
 
+//宏
+#import "MacroFileHeader.h"
+
 #endif /* PublicClassesHeader_h */

@@ -26,6 +26,7 @@
 		A54BC2FB1F57E6DD0017BE25 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC2FA1F57E6DD0017BE25 /* NSString+Category.m */; };
 		A54BC30A1F5800CB0017BE25 /* BasicUIAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC3091F5800CB0017BE25 /* BasicUIAlertController.m */; };
 		A54BC30D1F58072C0017BE25 /* PopupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC30C1F58072C0017BE25 /* PopupHelper.m */; };
+		A54BC3121F5811DF0017BE25 /* UploadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC3111F5811DF0017BE25 /* UploadHelper.m */; };
 		A57D98681F53BDC5003A9F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98671F53BDC5003A9F22 /* main.m */; };
 		A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986A1F53BDC5003A9F22 /* AppDelegate.m */; };
 		A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D986F1F53BDC5003A9F22 /* Main.storyboard */; };
@@ -103,6 +104,9 @@
 		A54BC3091F5800CB0017BE25 /* BasicUIAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicUIAlertController.m; sourceTree = "<group>"; };
 		A54BC30B1F58072C0017BE25 /* PopupHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupHelper.h; sourceTree = "<group>"; };
 		A54BC30C1F58072C0017BE25 /* PopupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupHelper.m; sourceTree = "<group>"; };
+		A54BC30E1F5810420017BE25 /* MacroFileHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFileHeader.h; sourceTree = "<group>"; };
+		A54BC3101F5811DF0017BE25 /* UploadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadHelper.h; sourceTree = "<group>"; };
+		A54BC3111F5811DF0017BE25 /* UploadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadHelper.m; sourceTree = "<group>"; };
 		A57D98631F53BDC5003A9F22 /* FrameConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D98671F53BDC5003A9F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A57D98691F53BDC5003A9F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -310,6 +314,15 @@
 			name = SecondVCs;
 			sourceTree = "<group>";
 		};
+		A54BC30F1F5811AD0017BE25 /* 上传图片 */ = {
+			isa = PBXGroup;
+			children = (
+				A54BC3101F5811DF0017BE25 /* UploadHelper.h */,
+				A54BC3111F5811DF0017BE25 /* UploadHelper.m */,
+			);
+			name = "上传图片";
+			sourceTree = "<group>";
+		};
 		A57D985A1F53BDC5003A9F22 = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +348,7 @@
 		A57D98651F53BDC5003A9F22 /* FrameConstruction */ = {
 			isa = PBXGroup;
 			children = (
+				A54BC30F1F5811AD0017BE25 /* 上传图片 */,
 				A54BC1A51F5548EB0017BE25 /* Custom */,
 				A54BC1991F553FF10017BE25 /* Controllers */,
 				A54BC1981F553FE50017BE25 /* Category */,
@@ -354,6 +368,7 @@
 				A57D98771F53BDC5003A9F22 /* Info.plist */,
 				A57D98661F53BDC5003A9F22 /* Supporting Files */,
 				A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */,
+				A54BC30E1F5810420017BE25 /* MacroFileHeader.h */,
 				A54BC2FD1F57E8FD0017BE25 /* MyCustomHeader.h */,
 				A54BC2FC1F57E8E50017BE25 /* ThirdHeader.h */,
 				A54BC1AC1F554C390017BE25 /* PublicClassesHeader.h */,
@@ -582,6 +597,7 @@
 				A54BC1B71F554DA50017BE25 /* FindViewController.m in Sources */,
 				A54BC1C91F55558D0017BE25 /* BBUIBarButtonItem.m in Sources */,
 				A54BC1BD1F554DBB0017BE25 /* ChatViewController.m in Sources */,
+				A54BC3121F5811DF0017BE25 /* UploadHelper.m in Sources */,
 				A54BC2E91F579FE90017BE25 /* MineDetailViewController.m in Sources */,
 				A54BC2F21F57AA8B0017BE25 /* MineSecondViewController.m in Sources */,
 				A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */,

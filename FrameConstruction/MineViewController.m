@@ -64,7 +64,7 @@
 
 - (void)changeTitle:(UIButton *)sender {
     
-    [[PopupHelper sharePopupHelper] showPopupWithTitle:@"新标题" message:@"请输入新标题" popupStyle:TextField_PopupStyle viewController:self clickSure:^(id result) {
+    [[PopupHelper sharePopupHelper] showPopupWithTitle:@"新标题" message:@"请输入新标题"  sureButtonTitle:nil cancelTitle:nil popupStyle:TextField_PopupStyle viewController:self clickSure:^(id result) {
         
         NSString *newTitle = [NSString stringWithFormat:@"%@", result];
         

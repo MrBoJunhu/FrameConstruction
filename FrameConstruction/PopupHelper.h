@@ -11,7 +11,9 @@
 
 typedef NS_ENUM(NSUInteger, PopupStyle) {
     
-    TextField_PopupStyle = 1,
+    OnleyMessage_PopupStyle = 0,
+    
+    TextField_PopupStyle,
     
 };
 
@@ -23,6 +25,6 @@ typedef void(^cancelBlock)();
 
 +(instancetype)sharePopupHelper;
 
-- (void)showPopupWithTitle:(NSString *)title message:(NSString *)message popupStyle:(PopupStyle)style viewController:(UIViewController *)controller clickSure:(clickSureBlock)sure clickCancel:(cancelBlock)cancel;
+- (void)showPopupWithTitle:(NSString *)title message:(NSString *)message sureButtonTitle:(NSString *)sureTitle cancelTitle:(NSString *)cancelTitle popupStyle:(PopupStyle)style viewController:(UIViewController *)controller clickSure:(clickSureBlock)sure clickCancel:(cancelBlock)cancel;
 
 @end
