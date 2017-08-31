@@ -12,7 +12,9 @@
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title selectedImageName:(NSString *)selectedImage nomalImageName:(NSString *)nomalImageName {
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    CusUINavigationController *nav = [[CusUINavigationController alloc] initWithRootViewController:vc];
+    
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     

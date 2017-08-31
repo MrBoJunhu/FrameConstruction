@@ -30,6 +30,12 @@
     
 }
 
-
+- (void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    
+}
 
 @end
