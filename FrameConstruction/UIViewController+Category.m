@@ -37,6 +37,11 @@
 
 - (void)clickLeftItem {
     
+    if (self.navigationController) {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
     
 }
 

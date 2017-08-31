@@ -7,7 +7,7 @@
 //
 
 #import "MineViewController.h"
-#import "MineDetailViewController.h"
+#import "MineSecondViewController.h"
 @interface MineViewController ()
 
 @end
@@ -24,10 +24,16 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+}
+
 
 - (void)clickRightItem {
     
-    MineDetailViewController *detailVC = [[MineDetailViewController alloc] init];
+    MineSecondViewController *detailVC = [[MineSecondViewController alloc] init];
    
     self.hidesBottomBarWhenPushed = YES;
     
@@ -36,5 +42,7 @@
     self.hidesBottomBarWhenPushed = NO;
 
 }
+
+
 
 @end

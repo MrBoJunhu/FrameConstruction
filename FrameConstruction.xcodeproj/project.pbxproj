@@ -21,6 +21,7 @@
 		A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1CB1F5557150017BE25 /* UIViewController+Category.m */; };
 		A54BC2E91F579FE90017BE25 /* MineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC2E81F579FE90017BE25 /* MineDetailViewController.m */; };
 		A54BC2EC1F57A2310017BE25 /* CusUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC2EB1F57A2310017BE25 /* CusUINavigationController.m */; };
+		A54BC2F21F57AA8B0017BE25 /* MineSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC2F11F57AA8B0017BE25 /* MineSecondViewController.m */; };
 		A57D98681F53BDC5003A9F22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D98671F53BDC5003A9F22 /* main.m */; };
 		A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D986A1F53BDC5003A9F22 /* AppDelegate.m */; };
 		A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57D986F1F53BDC5003A9F22 /* Main.storyboard */; };
@@ -86,6 +87,8 @@
 		A54BC2E81F579FE90017BE25 /* MineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineDetailViewController.m; sourceTree = "<group>"; };
 		A54BC2EA1F57A2310017BE25 /* CusUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusUINavigationController.h; sourceTree = "<group>"; };
 		A54BC2EB1F57A2310017BE25 /* CusUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusUINavigationController.m; sourceTree = "<group>"; };
+		A54BC2F01F57AA8B0017BE25 /* MineSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSecondViewController.h; sourceTree = "<group>"; };
+		A54BC2F11F57AA8B0017BE25 /* MineSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSecondViewController.m; sourceTree = "<group>"; };
 		A57D98631F53BDC5003A9F22 /* FrameConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57D98671F53BDC5003A9F22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A57D98691F53BDC5003A9F22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -252,12 +255,16 @@
 		A54BC1B31F554D660017BE25 /* HomeVCs */ = {
 			isa = PBXGroup;
 			children = (
+				A54BC2E71F579FE90017BE25 /* MineDetailViewController.h */,
+				A54BC2E81F579FE90017BE25 /* MineDetailViewController.m */,
 				A5F2EB311F53F3B800E534E4 /* HomepageViewController.h */,
 				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
 				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
 				A5F2EB351F53F3C100E534E4 /* MineViewController.m */,
 				A589E4801F53F14700C9D04C /* ScanViewController.h */,
 				A589E4811F53F14700C9D04C /* ScanViewController.m */,
+				A54BC2F01F57AA8B0017BE25 /* MineSecondViewController.h */,
+				A54BC2F11F57AA8B0017BE25 /* MineSecondViewController.m */,
 			);
 			name = HomeVCs;
 			sourceTree = "<group>";
@@ -277,8 +284,6 @@
 				A54BC1C21F55510B0017BE25 /* ChatDetailViewController.m */,
 				A54BC1C41F5551170017BE25 /* ContactsDetailViewController.h */,
 				A54BC1C51F5551170017BE25 /* ContactsDetailViewController.m */,
-				A54BC2E71F579FE90017BE25 /* MineDetailViewController.h */,
-				A54BC2E81F579FE90017BE25 /* MineDetailViewController.m */,
 			);
 			name = SecondVCs;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				A54BC1C91F55558D0017BE25 /* BBUIBarButtonItem.m in Sources */,
 				A54BC1BD1F554DBB0017BE25 /* ChatViewController.m in Sources */,
 				A54BC2E91F579FE90017BE25 /* MineDetailViewController.m in Sources */,
+				A54BC2F21F57AA8B0017BE25 /* MineSecondViewController.m in Sources */,
 				A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */,
 				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
 				A54BC1BA1F554DB30017BE25 /* ContactsViewController.m in Sources */,

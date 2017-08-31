@@ -25,16 +25,12 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor orangeColor];
-    
-    [self setRightNavigationItem];
-    
+        
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    
-//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
 }
 

@@ -1,14 +1,13 @@
 //
-//  CusUINavigationController.h
+//  MineSecondViewController.h
 //  FrameConstruction
 //
 //  Created by BillBo on 2017/8/31.
 //  Copyright © 2017年 BillBo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BasicViewController.h"
 
-@interface CusUINavigationController : UINavigationController
-
+@interface MineSecondViewController : BasicViewController
 
 @end

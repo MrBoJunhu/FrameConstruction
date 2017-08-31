@@ -12,9 +12,11 @@
 
 - (void)addChildVC:(UIViewController *)vc title:(NSString *)title selectedImageName:(NSString *)selectedImage nomalImageName:(NSString *)nomalImageName {
     
-    CusUINavigationController *nav = [[CusUINavigationController alloc] initWithRootViewController:vc];
+    //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    //解决tabbarController push到下级界面侧滑失效问题,已经自定义leftNavigationItem导致侧滑失效问题
+    
+    CusUINavigationController *nav = [[CusUINavigationController alloc] initWithRootViewController:vc];
     
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     

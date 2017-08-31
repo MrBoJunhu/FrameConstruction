@@ -15,16 +15,6 @@
 
 @implementation CusUINavigationController
 
-- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
-    
-    if (self = [super initWithRootViewController:rootViewController]) {
-        
-        
-    }
-    
-    return self;
-    
-}
 
 - (void)loadView{
     

@@ -20,15 +20,8 @@
     
     self.title = @"发现详情页";
     
-    [self setLeftNavigationItem];
-
 }
 
-- (void)clickLeftItem{
-    
-    [self.navigationController popViewControllerAnimated:YES];
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -20,16 +20,23 @@
                                                           NSForegroundColorAttributeName : [UIColor whiteColor]
                                                           }];
     //设置不透明
-    [UINavigationBar appearance].translucent = NO;
+    [UINavigationBar appearance].translucent = YES;
     //导航栏颜色
     [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    //
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
-    
+    //设置 barButtonItem 颜色
+//    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+   
     
     //工具栏
     [[UITabBar appearance] setBarTintColor:[UIColor redColor]];
+   
     //工具栏背景色
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    
+
 }
 
 @end
