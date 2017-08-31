@@ -20,13 +20,20 @@
     
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor cyanColor];
+    
     self.title = @"我的二级界面";
-  
+    
+    
     self.hidesBottomBarWhenPushed = YES;
 
     [self setRightNavigationItem];
     
 }
+
+
+
+
 
 - (void)clickRightItem{
     

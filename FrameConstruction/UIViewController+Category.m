@@ -45,11 +45,21 @@
     
 }
 
-
 - (void)clickRightItem {
     
     
 }
 
+- (void)setBradgeNumberAtIndex:(NSUInteger)index bradgeNumber:(NSUInteger)number{
+    
+    [self.tabBarController.tabBar showBadgeAtIndex:index badgeValue:[NSNumber numberWithInteger:number] maxBadgeValue:@901];
+    
+}
+
+- (void)cleanBradgeAtIndex:(NSUInteger)index{
+   
+    [self.tabBarController.tabBar removeBadgeAtIndex:index];
+    
+}
 
 @end

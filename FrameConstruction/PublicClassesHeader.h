@@ -9,14 +9,10 @@
 #ifndef PublicClassesHeader_h
 #define PublicClassesHeader_h
 
-#import "CusUINavigationController.h"
+//自定义
+#import "MyCustomHeader.h"
 
-#import "BBUIBarButtonItem.h"
-
-#import "UITabBarController+Category.h"
-
-#import "UIViewController+Category.h"
-
-#import "UIScrollView+EmptyDataSet.h"
+//第三方
+#import "ThirdHeader.h"
 
 #endif /* PublicClassesHeader_h */

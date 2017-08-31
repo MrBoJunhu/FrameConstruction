@@ -14,8 +14,19 @@
 
 @implementation ContactsViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+
+    [self setBradgeNumberAtIndex:1 bradgeNumber:1001];
+    
+}
+
 - (void)viewDidLoad {
+  
     [super viewDidLoad];
+    
+    self.title = @"通讯录";
 
 }
 

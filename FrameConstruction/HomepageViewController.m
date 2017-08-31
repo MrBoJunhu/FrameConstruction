@@ -20,6 +20,8 @@
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
+    [self cleanBradgeAtIndex:0];
+    
 }
 
 - (void)viewDidLoad {

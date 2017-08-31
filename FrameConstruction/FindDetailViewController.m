@@ -20,6 +20,8 @@
     
     self.title = @"发现详情页";
     
+    [self setBradgeNumberAtIndex:0 bradgeNumber:9];
+    
 }
 
 

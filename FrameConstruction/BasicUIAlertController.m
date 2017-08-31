@@ -1,32 +1,35 @@
 //
-//  ChatViewController.m
+//  BasicUIAlertController.m
 //  FrameConstruction
 //
-//  Created by BillBo on 2017/8/29.
+//  Created by BillBo on 2017/8/31.
 //  Copyright © 2017年 BillBo. All rights reserved.
 //
 
-#import "ChatViewController.h"
+#import "BasicUIAlertController.h"
 
-@interface ChatViewController ()
+@interface BasicUIAlertController ()
 
 @end
 
-@implementation ChatViewController
+@implementation BasicUIAlertController
 
-- (void)viewDidLoad {
-
-    [super viewDidLoad];
+- (void)show:(UIViewController *)vc clickSure:(clickSureBlock)sure clickCancel:(clickCancelBlock)cancel {
     
-    self.title = @"会话";
-
+    self.sureBlock = sure;
+    
+    self.cancelBlock = cancel;
+    
+    [vc presentViewController:self animated:YES completion:^{
+        
+    }];
+    
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    
-    [self cleanBradgeAtIndex:1];
+
+- (void)viewDidLoad {
+  
+    [super viewDidLoad];
 
 }
 
