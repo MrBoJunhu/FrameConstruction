@@ -11,6 +11,8 @@
 
 @interface MineViewController ()
 
+@property (nonatomic, strong) UITableView *tableV;
+
 @end
 
 @implementation MineViewController
@@ -23,7 +25,7 @@
         
     [self setRightNavigationItem];
     
-    
+    //http://www.cartier.cn/content/dam/rcq/car/14/37/90/9/1437909.png
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     btn.frame = CGRectMake(0, 0, 100, 30);
@@ -36,7 +38,20 @@
     
     self.navigationItem.titleView = btn;
 
+    self.tableV = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    [self.view addSubview:self.tableV];
+    
+}
 
+- (void)viewDidLayoutSubviews{
+    
+    [super viewDidLayoutSubviews];
+    
+    self.tableV.frame = self.view.bounds;
+    
+    self.tableV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -44,7 +59,7 @@
     [super viewWillAppear:animated];
    
     [self setBradgeNumberAtIndex:0 bradgeNumber:3];
-    
+
 }
 
 

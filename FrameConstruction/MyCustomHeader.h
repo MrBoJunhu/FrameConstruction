@@ -21,6 +21,12 @@
 
 #import "UIViewController+Category.h"
 
+#import "NSDateFormatter+Category.h"
+
+#import "NSDate+Category.h"
+
+#import "LocalFileHelper.h"
+
 
 #import "BasicUIAlertController.h"
 

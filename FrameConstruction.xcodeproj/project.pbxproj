@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E3808DE5FFF1BE219F265E7 /* libPods-FrameConstruction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7CB8C651A0FCC9069214B0 /* libPods-FrameConstruction.a */; };
+		A506F5EF1F58ECA20058FF9E /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5EE1F58ECA20058FF9E /* NSDate+Category.m */; };
+		A506F5F21F58EEF60058FF9E /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5F11F58EEF60058FF9E /* NSDateFormatter+Category.m */; };
+		A506F5F51F5905870058FF9E /* LocalFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5F41F5905870058FF9E /* LocalFileHelper.m */; };
 		A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */; };
 		A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1AE1F554C810017BE25 /* UITabBarController+Category.m */; };
 		A54BC1B21F554D580017BE25 /* SecondUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1B11F554D580017BE25 /* SecondUITabBarController.m */; };
@@ -64,6 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A506F5ED1F58ECA20058FF9E /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		A506F5EE1F58ECA20058FF9E /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		A506F5F01F58EEF60058FF9E /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		A506F5F11F58EEF60058FF9E /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		A506F5F31F5905870058FF9E /* LocalFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileHelper.h; sourceTree = "<group>"; };
+		A506F5F41F5905870058FF9E /* LocalFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileHelper.m; sourceTree = "<group>"; };
+		A506F5F61F5906800058FF9E /* FileConfigureHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileConfigureHeader.h; sourceTree = "<group>"; };
 		A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Setting.h"; sourceTree = "<group>"; };
 		A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Setting.m"; sourceTree = "<group>"; };
 		A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -239,6 +249,10 @@
 				A54BC2F71F57E0EB0017BE25 /* UITabBar+Badge.m */,
 				A54BC2F91F57E6DD0017BE25 /* NSString+Category.h */,
 				A54BC2FA1F57E6DD0017BE25 /* NSString+Category.m */,
+				A506F5ED1F58ECA20058FF9E /* NSDate+Category.h */,
+				A506F5EE1F58ECA20058FF9E /* NSDate+Category.m */,
+				A506F5F01F58EEF60058FF9E /* NSDateFormatter+Category.h */,
+				A506F5F11F58EEF60058FF9E /* NSDateFormatter+Category.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -317,6 +331,8 @@
 		A54BC30F1F5811AD0017BE25 /* 上传图片 */ = {
 			isa = PBXGroup;
 			children = (
+				A506F5F31F5905870058FF9E /* LocalFileHelper.h */,
+				A506F5F41F5905870058FF9E /* LocalFileHelper.m */,
 				A54BC3101F5811DF0017BE25 /* UploadHelper.h */,
 				A54BC3111F5811DF0017BE25 /* UploadHelper.m */,
 			);
@@ -368,6 +384,7 @@
 				A57D98771F53BDC5003A9F22 /* Info.plist */,
 				A57D98661F53BDC5003A9F22 /* Supporting Files */,
 				A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */,
+				A506F5F61F5906800058FF9E /* FileConfigureHeader.h */,
 				A54BC30E1F5810420017BE25 /* MacroFileHeader.h */,
 				A54BC2FD1F57E8FD0017BE25 /* MyCustomHeader.h */,
 				A54BC2FC1F57E8E50017BE25 /* ThirdHeader.h */,
@@ -602,13 +619,16 @@
 				A54BC2F21F57AA8B0017BE25 /* MineSecondViewController.m in Sources */,
 				A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */,
 				A54BC2FB1F57E6DD0017BE25 /* NSString+Category.m in Sources */,
+				A506F5F51F5905870058FF9E /* LocalFileHelper.m in Sources */,
 				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
 				A54BC1BA1F554DB30017BE25 /* ContactsViewController.m in Sources */,
 				A54BC30D1F58072C0017BE25 /* PopupHelper.m in Sources */,
 				A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */,
 				A5F2EB361F53F3C100E534E4 /* MineViewController.m in Sources */,
 				A54BC30A1F5800CB0017BE25 /* BasicUIAlertController.m in Sources */,
+				A506F5F21F58EEF60058FF9E /* NSDateFormatter+Category.m in Sources */,
 				A54BC1C01F5551010017BE25 /* FindDetailViewController.m in Sources */,
+				A506F5EF1F58ECA20058FF9E /* NSDate+Category.m in Sources */,
 				A589E4711F53E5E500C9D04C /* MainTabbarViewController.m in Sources */,
 				A54BC1C31F55510B0017BE25 /* ChatDetailViewController.m in Sources */,
 				A57D986B1F53BDC5003A9F22 /* AppDelegate.m in Sources */,

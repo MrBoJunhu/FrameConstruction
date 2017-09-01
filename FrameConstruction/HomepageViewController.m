@@ -32,6 +32,8 @@
     
     [self setRightNavigationItem];
     
+    NSLog(@"%@", [NSDate dateWithDateString:@"2017-12-23 11:32:21" formatterString:@"YYYY-MM-dd hh:mm:ss"]);
+        
 }
 
 - (void)clickRightItem {

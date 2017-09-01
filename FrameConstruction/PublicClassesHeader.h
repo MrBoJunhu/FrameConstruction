@@ -9,7 +9,7 @@
 #ifndef PublicClassesHeader_h
 #define PublicClassesHeader_h
 
-//自定义
+//个人工具
 #import "MyCustomHeader.h"
 
 //第三方
@@ -17,5 +17,8 @@
 
 //宏
 #import "MacroFileHeader.h"
+
+//文件配置信息类
+#import "FileConfigureHeader.h"
 
 #endif /* PublicClassesHeader_h */

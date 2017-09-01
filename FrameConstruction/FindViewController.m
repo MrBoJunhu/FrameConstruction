@@ -96,7 +96,7 @@
 //副标题
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
     
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"descriptionForEmptyDataSet" attributes:@{
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:[NSDate dateStringWithDate:[NSDate date] formatterString:@"YYYY-MM-dd HH:mm:ss"] attributes:@{
                                                                                                                       NSFontAttributeName :[UIFont systemFontOfSize:15.0f],
                                                                                                                       NSForegroundColorAttributeName :[UIColor blackColor]
                                                                                                                       }];

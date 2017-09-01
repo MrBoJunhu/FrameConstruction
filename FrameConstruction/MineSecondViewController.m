@@ -12,6 +12,8 @@
 
 @interface MineSecondViewController ()
 
+@property (nonatomic, strong) UITableView *tableV;
+
 @end
 
 @implementation MineSecondViewController
@@ -24,16 +26,22 @@
     
     self.title = @"我的二级界面";
     
-    
     self.hidesBottomBarWhenPushed = YES;
 
     [self setRightNavigationItem];
     
+    self.tableV = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    [self.view addSubview:self.tableV];
+
 }
 
-
-
-
+- (void)viewDidLayoutSubviews{
+    
+    [super viewDidLayoutSubviews];
+    
+    self.tableV.frame = self.view.bounds;
+}
 
 - (void)clickRightItem{
     
