@@ -11,6 +11,9 @@
 		A506F5EF1F58ECA20058FF9E /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5EE1F58ECA20058FF9E /* NSDate+Category.m */; };
 		A506F5F21F58EEF60058FF9E /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5F11F58EEF60058FF9E /* NSDateFormatter+Category.m */; };
 		A506F5F51F5905870058FF9E /* LocalFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5F41F5905870058FF9E /* LocalFileHelper.m */; };
+		A506F5FA1F593FD80058FF9E /* ImageDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5F81F593FD80058FF9E /* ImageDownloadViewController.m */; };
+		A506F5FB1F593FD80058FF9E /* ImageDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A506F5F91F593FD80058FF9E /* ImageDownloadViewController.xib */; };
+		A506F5FE1F5942EC0058FF9E /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A506F5FD1F5942EC0058FF9E /* UIButton+Category.m */; };
 		A513E7581F540D1100FD79A7 /* AppDelegate+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */; };
 		A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1AE1F554C810017BE25 /* UITabBarController+Category.m */; };
 		A54BC1B21F554D580017BE25 /* SecondUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54BC1B11F554D580017BE25 /* SecondUITabBarController.m */; };
@@ -74,6 +77,11 @@
 		A506F5F31F5905870058FF9E /* LocalFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileHelper.h; sourceTree = "<group>"; };
 		A506F5F41F5905870058FF9E /* LocalFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileHelper.m; sourceTree = "<group>"; };
 		A506F5F61F5906800058FF9E /* FileConfigureHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileConfigureHeader.h; sourceTree = "<group>"; };
+		A506F5F71F593FD80058FF9E /* ImageDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloadViewController.h; sourceTree = "<group>"; };
+		A506F5F81F593FD80058FF9E /* ImageDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloadViewController.m; sourceTree = "<group>"; };
+		A506F5F91F593FD80058FF9E /* ImageDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDownloadViewController.xib; sourceTree = "<group>"; };
+		A506F5FC1F5942EC0058FF9E /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
+		A506F5FD1F5942EC0058FF9E /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		A513E7561F540D1100FD79A7 /* AppDelegate+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Setting.h"; sourceTree = "<group>"; };
 		A513E7571F540D1100FD79A7 /* AppDelegate+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Setting.m"; sourceTree = "<group>"; };
 		A54BC1A41F5548B90017BE25 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -253,6 +261,8 @@
 				A506F5EE1F58ECA20058FF9E /* NSDate+Category.m */,
 				A506F5F01F58EEF60058FF9E /* NSDateFormatter+Category.h */,
 				A506F5F11F58EEF60058FF9E /* NSDateFormatter+Category.m */,
+				A506F5FC1F5942EC0058FF9E /* UIButton+Category.h */,
+				A506F5FD1F5942EC0058FF9E /* UIButton+Category.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -301,6 +311,9 @@
 				A5F2EB321F53F3B800E534E4 /* HomepageViewController.m */,
 				A5F2EB341F53F3C100E534E4 /* MineViewController.h */,
 				A5F2EB351F53F3C100E534E4 /* MineViewController.m */,
+				A506F5F71F593FD80058FF9E /* ImageDownloadViewController.h */,
+				A506F5F81F593FD80058FF9E /* ImageDownloadViewController.m */,
+				A506F5F91F593FD80058FF9E /* ImageDownloadViewController.xib */,
 				A589E4801F53F14700C9D04C /* ScanViewController.h */,
 				A589E4811F53F14700C9D04C /* ScanViewController.m */,
 				A54BC2F01F57AA8B0017BE25 /* MineSecondViewController.h */,
@@ -533,6 +546,7 @@
 			files = (
 				A589E47B1F53E91100C9D04C /* scan@3x.png in Resources */,
 				A57D98761F53BDC5003A9F22 /* LaunchScreen.storyboard in Resources */,
+				A506F5FB1F593FD80058FF9E /* ImageDownloadViewController.xib in Resources */,
 				A57D98731F53BDC5003A9F22 /* Assets.xcassets in Resources */,
 				A57D98711F53BDC5003A9F22 /* Main.storyboard in Resources */,
 				A589E4781F53E91100C9D04C /* scan_1@2x.png in Resources */,
@@ -619,6 +633,7 @@
 				A54BC2F21F57AA8B0017BE25 /* MineSecondViewController.m in Sources */,
 				A54BC1CC1F5557150017BE25 /* UIViewController+Category.m in Sources */,
 				A54BC2FB1F57E6DD0017BE25 /* NSString+Category.m in Sources */,
+				A506F5FA1F593FD80058FF9E /* ImageDownloadViewController.m in Sources */,
 				A506F5F51F5905870058FF9E /* LocalFileHelper.m in Sources */,
 				A589E47C1F53E91100C9D04C /* ZHScanView.m in Sources */,
 				A54BC1BA1F554DB30017BE25 /* ContactsViewController.m in Sources */,
@@ -626,6 +641,7 @@
 				A54BC1AF1F554C810017BE25 /* UITabBarController+Category.m in Sources */,
 				A5F2EB361F53F3C100E534E4 /* MineViewController.m in Sources */,
 				A54BC30A1F5800CB0017BE25 /* BasicUIAlertController.m in Sources */,
+				A506F5FE1F5942EC0058FF9E /* UIButton+Category.m in Sources */,
 				A506F5F21F58EEF60058FF9E /* NSDateFormatter+Category.m in Sources */,
 				A54BC1C01F5551010017BE25 /* FindDetailViewController.m in Sources */,
 				A506F5EF1F58ECA20058FF9E /* NSDate+Category.m in Sources */,

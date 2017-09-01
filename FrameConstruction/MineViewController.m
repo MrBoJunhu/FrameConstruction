@@ -9,9 +9,13 @@
 #import "MineViewController.h"
 #import "MineSecondViewController.h"
 
-@interface MineViewController ()
+#import "ImageDownloadViewController.h"
+
+@interface MineViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableV;
+
+@property (nonatomic, strong) NSArray *functionArray;
 
 @end
 
@@ -22,23 +26,20 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"我的";
-        
-    [self setRightNavigationItem];
     
-    //http://www.cartier.cn/content/dam/rcq/car/14/37/90/9/1437909.png
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.functionArray = @[@"我的二级界面",@"图片下载",@"视频下载",@"多文件下载"];
     
-    btn.frame = CGRectMake(0, 0, 100, 30);
+    UIButton *btn = [UIButton buttonWithFrame:CGRectMake(0, 0, 100, 30) backgroundColor:[UIColor blackColor] title:@"点击更改标题" titleColor:[UIColor whiteColor] highlightedColor:[UIColor lightGrayColor] target:self selector:@selector(changeTitle:)];
     
-    [btn setTitle:@"自定义titile" forState:UIControlStateNormal];
-    
-    [btn addTarget:self action:@selector(changeTitle:) forControlEvents:UIControlEventTouchUpInside];
-    
-    btn.backgroundColor = [UIColor blackColor];
+    [btn setBorderStyleBorderWidth:1 borderColor:[UIColor whiteColor] cornerRadius:5];
     
     self.navigationItem.titleView = btn;
 
     self.tableV = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    self.tableV.delegate = self;
+    
+    self.tableV.dataSource = self;
     
     [self.view addSubview:self.tableV];
     
@@ -62,18 +63,91 @@
 
 }
 
-
-- (void)clickRightItem {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    MineSecondViewController *detailVC = [[MineSecondViewController alloc] init];
+    static NSString *identifier = @"UITableViewCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
    
-    self.hidesBottomBarWhenPushed = YES;
+    if (!cell) {
     
-    [self.navigationController pushViewController:detailVC animated:YES];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+
+    }
     
-    self.hidesBottomBarWhenPushed = NO;
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+ 
+    cell.textLabel.text = self.functionArray[indexPath.row];
+    
+    return cell;
+    
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.functionArray.count;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (indexPath.row) {
+        case 0:
+        {
+            MineSecondViewController *detailVC = [[MineSecondViewController alloc] init];
+            
+            self.hidesBottomBarWhenPushed = YES;
+            
+            [self.navigationController pushViewController:detailVC animated:YES];
+            
+            self.hidesBottomBarWhenPushed = NO;
+
+        }
+            break;
+            
+        case 1:
+        {
+            ImageDownloadViewController *detailVC = [[ImageDownloadViewController alloc] init];
+
+            self.hidesBottomBarWhenPushed = YES;
+            
+            [self.navigationController pushViewController:detailVC animated:YES];
+            
+            self.hidesBottomBarWhenPushed = NO;
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    
+    [super viewWillDisappear:animated];
+    
+    [self deselect];
+    
+}
+
+#pragma mark - 取消 cell 的选中效果
+
+- (void)deselect {
+    
+    //取消 cell 的选中效果
+    [self.tableV deselectRowAtIndexPath:[self.tableV indexPathForSelectedRow] animated:YES];
 
 }
+
+
 
 #pragma mark - 自带输入框的弹窗
 

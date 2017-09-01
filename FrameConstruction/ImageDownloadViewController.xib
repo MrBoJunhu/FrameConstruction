@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageDownloadViewController">
+            <connections>
+                <outlet property="imageV" destination="8JX-Sz-Ggt" id="YFU-hZ-43d"/>
+                <outlet property="progressV" destination="wKa-0q-eic" id="XeC-0a-y03"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8JX-Sz-Ggt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCD-bJ-KFe">
+                    <rect key="frame" x="20" y="599" width="157.5" height="30"/>
+                    <state key="normal" title="开始下载"/>
+                    <connections>
+                        <action selector="beginDownload:" destination="-1" eventType="touchUpInside" id="HpC-yc-DwM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQi-dq-UZ6">
+                    <rect key="frame" x="197.5" y="599" width="157.5" height="30"/>
+                    <state key="normal" title="暂停下载"/>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-0q-eic">
+                    <rect key="frame" x="15" y="557" width="345" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tQi-dq-UZ6" firstAttribute="centerY" secondItem="yCD-bJ-KFe" secondAttribute="centerY" id="4T0-iD-mXk"/>
+                <constraint firstItem="8JX-Sz-Ggt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AoE-wd-w9I"/>
+                <constraint firstItem="tQi-dq-UZ6" firstAttribute="width" secondItem="yCD-bJ-KFe" secondAttribute="width" id="CPg-XK-TUB"/>
+                <constraint firstAttribute="trailing" secondItem="tQi-dq-UZ6" secondAttribute="trailing" constant="20" id="OdM-ZF-jcg"/>
+                <constraint firstItem="tQi-dq-UZ6" firstAttribute="top" secondItem="wKa-0q-eic" secondAttribute="bottom" constant="40" id="P6D-a0-P4B"/>
+                <constraint firstItem="8JX-Sz-Ggt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VyE-Cd-j76"/>
+                <constraint firstAttribute="trailing" secondItem="8JX-Sz-Ggt" secondAttribute="trailing" id="dhr-Gk-1BK"/>
+                <constraint firstAttribute="bottom" secondItem="yCD-bJ-KFe" secondAttribute="bottom" constant="38" id="rD3-Av-IfM"/>
+                <constraint firstItem="yCD-bJ-KFe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="upx-V1-z7Y"/>
+                <constraint firstItem="tQi-dq-UZ6" firstAttribute="leading" secondItem="yCD-bJ-KFe" secondAttribute="trailing" constant="20" id="vgW-Kz-xeh"/>
+                <constraint firstItem="wKa-0q-eic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="wD5-TG-9d6"/>
+                <constraint firstAttribute="trailing" secondItem="wKa-0q-eic" secondAttribute="trailing" constant="15" id="xbg-p8-4S4"/>
+                <constraint firstItem="wKa-0q-eic" firstAttribute="top" secondItem="8JX-Sz-Ggt" secondAttribute="bottom" constant="10" id="ywd-Tk-bT1"/>
+                <constraint firstItem="tQi-dq-UZ6" firstAttribute="height" secondItem="yCD-bJ-KFe" secondAttribute="height" id="z5C-vI-1VL"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="89.5"/>
+        </view>
+    </objects>
+</document>

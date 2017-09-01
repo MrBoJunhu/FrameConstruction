@@ -12,12 +12,16 @@ typedef void(^UploadSuccess)(id  responseData, NSError *error);
 
 typedef void(^UploadFaile)(id errorJson, NSString *errorCode);
 
+
+typedef void(^DownloadSuccess)(NSString *filePath);
+
+typedef void(^DownloadFaile)(NSError *error);
+
 typedef void(^ProgressBlock)(float progress);
 
 @interface UploadHelper : NSObject
 
 + (instancetype)shareUpUploadHelper;
-
 
 
 /**
@@ -77,5 +81,17 @@ typedef void(^ProgressBlock)(float progress);
  @param complete 成功
  @param faile 失败
  */
-- (void)downloadFileWithSavePath:(NSString *)savePath appid:(NSString *)appid token:(NSString *)token hostUrl:(NSString *)hosturl pathUrlString:(NSString *)urlString parameters:(id)parameters progress:(ProgressBlock)progress complection:(UploadSuccess)complete  faile:(UploadFaile)faile;
+- (void)downloadFileWithSavePath:(NSString *)savePath appid:(NSString *)appid token:(NSString *)token hostUrl:(NSString *)hosturl pathUrlString:(NSString *)urlString parameters:(id)parameters progress:(ProgressBlock)progress complection:(DownloadSuccess)complete  faile:(DownloadFaile)faile;
+
+/**
+ 暂停下载
+ */
+- (void)stopDownload;
+
+/**
+ 继续下载
+ */
+- (void)continueDownload;
+
+
 @end

@@ -7,12 +7,16 @@
 //
 
 #import "UploadHelper.h"
-
 #import <AVFoundation/AVFoundation.h>
 
 @interface UploadHelper ()
 
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
+
+/**
+ 下载
+ */
+@property (nonatomic, strong) NSURLSessionDownloadTask *downloadTask;
 
 @end
 
@@ -35,7 +39,9 @@
     
     if (!_manager) {
         
-        self.manager = [AFHTTPSessionManager manager];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+
+        self.manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
        
         self.manager.requestSerializer.timeoutInterval = 20;
         
@@ -59,16 +65,12 @@
         [self.manager.requestSerializer setValue:token forHTTPHeaderField:@"token"];
     }
     
-    if (hosturl.length > 0) {
-        
-        return [NSString stringWithFormat:@"%@/%@",hosturl,urlString];
-   
-    }else{
-        
-        return urlString;
-  
-    }
-
+    NSString *requestURLString = hosturl.length > 0 ? [NSString stringWithFormat:@"%@/%@",hosturl,urlString] : urlString;
+    
+    DebugLog(@"requestURLString : %@", requestURLString);
+    
+    return requestURLString;
+    
 }
 
 
@@ -193,7 +195,7 @@
 
 #pragma mark - 单文件的下载
 
-- (void)downloadFileWithSavePath:(NSString *)savePath appid:(NSString *)appid token:(NSString *)token hostUrl:(NSString *)hosturl pathUrlString:(NSString *)urlString parameters:(id)parameters progress:(ProgressBlock)progress complection:(UploadSuccess)complete  faile:(UploadFaile)faile{
+- (void)downloadFileWithSavePath:(NSString *)savePath appid:(NSString *)appid token:(NSString *)token hostUrl:(NSString *)hosturl pathUrlString:(NSString *)urlString parameters:(id)parameters progress:(ProgressBlock)progress complection:(DownloadSuccess)complete  faile:(DownloadFaile)faile{
     
     @weakify(self);
     
@@ -201,26 +203,64 @@
 
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:downloadUrlString]];
     
-     [self.manager downloadTaskWithRequest:urlRequest progress:^(NSProgress * _Nonnull downloadProgress) {
+    if (!self.manager) {
+        return;
+    }
+    
+   self.downloadTask =  [self.manager downloadTaskWithRequest:urlRequest progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        [weakself uploadOrDownProgress:downloadProgress progressBlock:progress];
-        
+//        [weakself uploadOrDownProgress:downloadProgress progressBlock:progress];
+       
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         
-        return [NSURL URLWithString:savePath];
+        
+        
+        NSString *path = [savePath stringByAppendingPathComponent:response.suggestedFilename];
+        
+        DebugLog(@"下载保存的路径 %@", path);
+        
+        return [NSURL fileURLWithPath:path];
         
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         
-        if (!error) {
+        if (filePath != nil) {
+           
+            //设置下载完成操作
+            // filePath就是你下载文件的位置，你可以解压，也可以直接拿来使用
+            complete([filePath path]);
+        
+        }else{
             
-            complete(@"下载完成!",nil);
+            faile(error);
         }
         
     }];
     
+    //开始下载
+    [self.downloadTask resume];
+    
 }
 
+#pragma mark - 暂停下载
 
+- (void)stopDownload{
+    
+    if (self.downloadTask) {
+        
+        [self.downloadTask suspend];
+        
+    }
+}
+
+- (void)continueDownload{
+    
+    if (self.downloadTask) {
+        
+        [self.downloadTask resume];
+        
+    }
+    
+}
 #pragma mark - ☺️
 
 #pragma mark - 上传/下载 进度

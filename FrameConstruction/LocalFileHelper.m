@@ -77,6 +77,38 @@
     complete(imageData,fileName);
 
 }
+#pragma mark - caches文件夹
 
+- (NSString *)getCachesPath {
+    
+    return  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    
+}
+
+- (NSString *)createDirectoryInCachesWithDirectoryName:(NSString *)name {
+
+    NSString *directoryPath = [[self getCachesPath] stringByAppendingPathComponent:name];
+    
+    DebugLog(@"🍎 directoryPath :  %@", directoryPath);
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    
+    NSError *err;
+    
+    if (![manager fileExistsAtPath:directoryPath]) {
+        
+        [manager createDirectoryAtPath:directoryPath withIntermediateDirectories:YES attributes:nil error:&err];
+    }
+    
+    if (!err) {
+        
+        return directoryPath;
+        
+    }else{
+        
+        return nil;
+    }
+    
+}
 
 @end

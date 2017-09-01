@@ -9,11 +9,13 @@
 #ifndef MyCustomHeader_h
 #define MyCustomHeader_h
 
-#import "NSString+Category.h"
+#import "BasicUIAlertController.h"
 
 #import "CusUINavigationController.h"
 
 #import "BBUIBarButtonItem.h"
+
+#import "NSString+Category.h"
 
 #import "UITabBar+Badge.h"
 
@@ -25,11 +27,16 @@
 
 #import "NSDate+Category.h"
 
-#import "LocalFileHelper.h"
+#import "UIButton+Category.h"
 
 
-#import "BasicUIAlertController.h"
+
+//单例
 
 #import "PopupHelper.h"
+
+#import "LocalFileHelper.h"
+
+#import "UploadHelper.h"
 
 #endif /* MyCustomHeader_h */
