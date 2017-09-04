@@ -29,6 +29,7 @@
 
 #import "UIButton+Category.h"
 
+#import "UILabel+Category.h"
 
 
 //单例
@@ -38,5 +39,10 @@
 #import "LocalFileHelper.h"
 
 #import "UploadHelper.h"
+
+
+//网络请求
+#import "NetworkRequest.h"
+#import "NetworkManager.h"
 
 #endif /* MyCustomHeader_h */

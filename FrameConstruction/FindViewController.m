@@ -65,6 +65,31 @@
 }
 
 
+- (void)getDataFromNetwork {
+    
+    NetworkRequest *request = [NetworkRequest requesForDynamicLoginaccid:@"0" pageIndex:@"1" pageSize:@"10"];
+    
+    @weakify(self);
+    
+    [weakself showProgressHUD];
+    
+    [[NetworkManager shareNetworkManager] sendRequest:request success:^(id responseObject) {
+        
+        _hasData = YES;
+        
+        [weakself showProgressHUDWithText:@"恭喜你,加载成功啦!" andHiddenAfter:2.0];
+        
+    } faile:^(NetworkError *error) {
+        
+        [weakself showProgressHUDWithText:error.msg andHiddenAfter:5.0];
+        
+        _hasData = NO;
+        
+    }];
+    
+}
+
+
 - (void)clickRightItem {
     
     _hasData = YES;
@@ -96,7 +121,7 @@
 //副标题
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
     
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:[NSDate dateStringWithDate:[NSDate date] formatterString:@"YYYY-MM-dd HH:mm:ss"] attributes:@{
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:[NSDate bb_dateStringWithDate:[NSDate date] formatterString:@"YYYY-MM-dd HH:mm:ss"] attributes:@{
                                                                                                                       NSFontAttributeName :[UIFont systemFontOfSize:15.0f],
                                                                                                                       NSForegroundColorAttributeName :[UIColor blackColor]
                                                                                                                       }];
@@ -197,7 +222,8 @@
     
     NSLog(@"emptyDataSetDidTapButton");
     
-    _hasData = YES;
+    
+    [self getDataFromNetwork];
     
     [self.tbv reloadData];
 

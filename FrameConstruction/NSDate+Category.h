@@ -18,7 +18,7 @@
  @param formatterString formatterString description
  @return return value description
  */
-+(NSString *)dateStringWithDate:(NSDate *)date formatterString:(NSString *)formatterString;
++(NSString *)bb_dateStringWithDate:(NSDate *)date formatterString:(NSString *)formatterString;
 
 
 /**
@@ -28,7 +28,7 @@
  @param formatterString formatterString description
  @return return value description
  */
-+(NSDate *)dateWithDateString:(NSString *)dateString formatterString:(NSString *)formatterString;
++(NSDate *)bb_dateWithDateString:(NSString *)dateString formatterString:(NSString *)formatterString;
 
 
 @end

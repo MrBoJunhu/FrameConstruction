@@ -36,4 +36,24 @@
  */
 - (void)cleanBradgeAtIndex:(NSUInteger)index;
 
+
+/**
+ 显示菊花
+ */
+- (void)showProgressHUD;
+
+/**
+ 显示加载文字,一段时间后消失
+ 
+ @param msg msg description
+ @param time time description
+ */
+- (void)showProgressHUDWithText:(NSString *)msg andHiddenAfter:(NSTimeInterval)time;
+
+
+/**
+ 隐藏菊花
+ */
+- (void)hiddenProgressHUD;
+
 @end

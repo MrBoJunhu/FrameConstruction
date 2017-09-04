@@ -60,7 +60,7 @@
     [super viewWillAppear:animated];
    
     [self setBradgeNumberAtIndex:0 bradgeNumber:3];
-
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

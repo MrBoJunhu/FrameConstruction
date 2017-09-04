@@ -62,4 +62,24 @@
     
 }
 
+
+- (void)showProgressHUD {
+    
+    [MBProgressHUD bwm_showHUDAddedTo:[UIApplication sharedApplication].keyWindow title:@"加载中..." animated:YES];
+    
+}
+
+- (void)showProgressHUDWithText:(NSString *)msg andHiddenAfter:(NSTimeInterval)time {
+    
+    [self hiddenProgressHUD];
+    
+    [MBProgressHUD bwm_showTitle:msg toView:[UIApplication sharedApplication].keyWindow hideAfter:time];
+    
+}
+
+- (void)hiddenProgressHUD{
+   
+    [MBProgressHUD hideAllHUDsForView:[UIApplication sharedApplication].keyWindow animated:YES];
+    
+}
 @end

@@ -16,7 +16,7 @@
  @param formatterString formatterString description
  @return return value description
  */
-+ (NSDateFormatter *)formatterWithFormatterString:(NSString *)formatterString {
++ (NSDateFormatter *)bb_formatterWithFormatterString:(NSString *)formatterString {
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     

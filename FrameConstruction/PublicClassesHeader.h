@@ -21,4 +21,7 @@
 //文件配置信息类
 #import "FileConfigureHeader.h"
 
+#import "HttpUrl.h"
+#import "AppHostSetting.h"
+
 #endif /* PublicClassesHeader_h */

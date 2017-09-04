@@ -37,7 +37,7 @@
     //获取沙盒
     NSString *cachesString = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
     //视频名
-    NSString *videoName = [NSString stringWithFormat:@"%@.mp4",[NSDate dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
+    NSString *videoName = [NSString stringWithFormat:@"%@.mp4",[NSDate bb_dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
     
     //压缩后存储路径
     NSString *savePath = [cachesString stringByAppendingString:[NSString stringWithFormat:@"/out_%@",videoName]];
@@ -72,7 +72,7 @@
     
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     
-    NSString *fileName = [NSString stringWithFormat:@"%@_img.png",[NSDate dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
+    NSString *fileName = [NSString stringWithFormat:@"%@_img.png",[NSDate bb_dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
     
     complete(imageData,fileName);
 

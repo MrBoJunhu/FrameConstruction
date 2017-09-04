@@ -170,7 +170,7 @@
         //压缩成功,上传
         [weakself.manager POST:uploadString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
             
-            NSString *fileName = [NSString stringWithFormat:@"%@.mp4",[NSDate dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
+            NSString *fileName = [NSString stringWithFormat:@"%@.mp4",[NSDate bb_dateStringWithDate:[NSDate date] formatterString:tempFileNameDateFormatter]];
             
             [formData appendPartWithFileURL:[NSURL fileURLWithPath:exportCompressPath] name:@"videoUpload" fileName:fileName mimeType:@"video/mpeg4" error:nil];
             

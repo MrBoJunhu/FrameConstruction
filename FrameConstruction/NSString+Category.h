@@ -59,5 +59,35 @@
 + (NSString *)tranceDataToString:(id)object;
 
 
+
+#pragma mark - Encode & Decode
+/**
+ *  Base64 编码
+ *
+ *  @return 编码后的字符
+ */
+- (NSString *)bb_base64Encode;
+/**
+ *  Base64 解码
+ *
+ *  @return 解码后的字符
+ */
+- (NSString *)bb_base64Decode;
+
+/**
+ *  MD5 编码
+ *
+ *  @return 编码后的字符
+ */
+- (NSString *)bb_md5Encode;
+
+/**
+ *  转译中文
+ *
+ *  @param chinese 中文字符
+ *
+ */
+
++(NSString *)lowercaseSpellingWithChineseCharacters:(NSString *)chinese;
 @end
 

@@ -8,6 +8,8 @@
 
 #import "NSString+Category.h"
 
+#import <CommonCrypto/CommonCrypto.h>
+
 @implementation NSString (Category)
 
 +(CGRect)rectForString:(NSString *)givenString fontSize:(CGFloat)fontSize {
@@ -49,6 +51,38 @@
         return @"";
     }
     
+}
+
+- (NSString *)bb_base64Encode {
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [data base64EncodedStringWithOptions:0];
+}
+
+- (NSString *)bb_base64Decode {
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:self options:0];
+    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)bb_md5Encode {
+    const char *concat_str = [self UTF8String];
+    
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(concat_str, (CC_LONG)strlen(concat_str), result);
+    NSMutableString *hash = [NSMutableString string];
+    for (int i = 0; i < 16; i++)
+        [hash appendFormat:@"%02X", result[i]];
+    return [hash uppercaseString];
+}
+
++(NSString *)lowercaseSpellingWithChineseCharacters:(NSString *)chinese {
+    //转成了可变字符串
+    NSMutableString *str = [NSMutableString stringWithString:chinese];
+    //先转换为带声调的拼音
+    CFStringTransform((CFMutableStringRef)str, NULL, kCFStringTransformMandarinLatin, NO);
+    //再转换为不带声调的拼音
+    CFStringTransform((CFMutableStringRef)str, NULL, kCFStringTransformStripDiacritics, NO);
+    //返回小写拼音
+    return [str lowercaseString];
 }
 
 
