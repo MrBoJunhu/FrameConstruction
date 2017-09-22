@@ -33,6 +33,8 @@
     self.tableV = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     
     [self.view addSubview:self.tableV];
+    
+    [self hiddenTableViewFooterView:self.tableV];
 
 }
 

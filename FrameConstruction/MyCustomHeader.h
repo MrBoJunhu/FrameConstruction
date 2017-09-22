@@ -22,6 +22,7 @@
 #import "UITabBarController+Category.h"
 
 #import "UIViewController+Category.h"
+#import "UIViewController+HUD.h"
 
 #import "NSDateFormatter+Category.h"
 
@@ -31,6 +32,7 @@
 
 #import "UILabel+Category.h"
 
+#import "UIButton+UIButton_ImageTitle.h"
 
 //单例
 
@@ -40,6 +42,8 @@
 
 #import "UploadHelper.h"
 
+//音频播放类
+#import "VoiceManager.h"
 
 //网络请求
 #import "NetworkRequest.h"

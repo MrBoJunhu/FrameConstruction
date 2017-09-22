@@ -51,7 +51,7 @@
     
     self.tableV.frame = self.view.bounds;
     
-    self.tableV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    [self hiddenTableViewFooterView:self.tableV];
     
 }
 

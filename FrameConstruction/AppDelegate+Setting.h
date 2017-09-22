@@ -10,6 +10,6 @@
 
 @interface AppDelegate (Setting)
 
-- (void)test;
+- (void)settingAppStyle;
 
 @end

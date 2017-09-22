@@ -18,6 +18,11 @@
 
 #define NSBundleXib(name) [[NSBundle mainBundle] loadNibNamed:name owner:self options:nil].firstObject
 
+
+//国际化
+#define BBLocalizedString(string) NSLocalizedString(string, nil)
+
+
 #define ENABLE_DEBUG
 
 

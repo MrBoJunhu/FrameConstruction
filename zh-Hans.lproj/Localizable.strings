@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  FrameConstruction
+
+  Created by BillBo on 2017/9/5.
+  Copyright © 2017年 BillBo. All rights reserved.
+*/
+"Could not connect to the server" = "无法连接到服务器";
+"time out" = "请求超时";
+"BadServerResponse" = "服务器错误";
+"Request_Success" = "请求成功";

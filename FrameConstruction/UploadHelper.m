@@ -209,11 +209,9 @@
     
    self.downloadTask =  [self.manager downloadTaskWithRequest:urlRequest progress:^(NSProgress * _Nonnull downloadProgress) {
         
-//        [weakself uploadOrDownProgress:downloadProgress progressBlock:progress];
+        [weakself uploadOrDownProgress:downloadProgress progressBlock:progress];
        
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        
-        
         
         NSString *path = [savePath stringByAppendingPathComponent:response.suggestedFilename];
         

@@ -19,7 +19,6 @@
     [super viewWillAppear:animated];
 
     [self setBradgeNumberAtIndex:1 bradgeNumber:1001];
-    
 }
 
 - (void)viewDidLoad {

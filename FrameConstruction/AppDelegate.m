@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self test];
+    [self settingAppStyle];
     
     MainTabbarViewController *mainVC = [[MainTabbarViewController alloc] init];
     

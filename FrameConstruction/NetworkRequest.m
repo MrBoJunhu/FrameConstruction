@@ -14,24 +14,24 @@
 {
     NetworkError *networkError = [[NetworkError alloc] init];
     
-    networkError.msg = NSLocalizedString(@"NetworkError_Unknown", nil);
+    networkError.msg = NSLocalizedString(unknowError, nil);
     switch (error.code) {
         case NSURLErrorNotConnectedToInternet:
         case NSURLErrorCannotConnectToHost:
         case kCFURLErrorNetworkConnectionLost:
         {
             //Could not connect to the server
-            networkError.msg = @"无法连接到服务器";
+            networkError.msg = BBLocalizedString(cannotConnectNet);
         }
             break;
         case NSURLErrorTimedOut:
         {
             //time out
-            networkError.msg = @"请求超时";
+            networkError.msg = BBLocalizedString(outTimeNet);
         }
             break;
         case NSURLErrorBadServerResponse:
-            networkError.msg = @"服务器错误";
+            networkError.msg = BBLocalizedString(badServerResponse);
             break;
         default:
             break;

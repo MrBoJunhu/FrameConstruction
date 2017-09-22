@@ -77,11 +77,10 @@
         
         _hasData = YES;
         
-        [weakself showProgressHUDWithText:@"恭喜你,加载成功啦!" andHiddenAfter:2.0];
+        [weakself hiddenProgressHUD];
         
     } faile:^(NetworkError *error) {
         
-        [weakself showProgressHUDWithText:error.msg andHiddenAfter:5.0];
         
         _hasData = NO;
         

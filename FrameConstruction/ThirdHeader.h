@@ -12,6 +12,6 @@
 #import "UIScrollView+EmptyDataSet.h"
 
 #import <AFNetworking.h>
-#import <MBProgressHUD+BWMExtension.h>
+#import <MBProgressHUD.h>
 
 #endif /* ThirdHeader_h */

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class MBProgressHUD;
+
 @interface UIViewController (Category)
 
 - (void)setRightNavigationItem;
@@ -17,6 +19,13 @@
 - (void)clickLeftItem;
 
 - (void)clickRightItem;
+
+/**
+ 不显示tableview多余的分割线
+
+ @param tableView tableView description
+ */
+- (void)hiddenTableViewFooterView:(UITableView *)tableView;
 
 
 /**
@@ -37,23 +46,5 @@
 - (void)cleanBradgeAtIndex:(NSUInteger)index;
 
 
-/**
- 显示菊花
- */
-- (void)showProgressHUD;
-
-/**
- 显示加载文字,一段时间后消失
- 
- @param msg msg description
- @param time time description
- */
-- (void)showProgressHUDWithText:(NSString *)msg andHiddenAfter:(NSTimeInterval)time;
-
-
-/**
- 隐藏菊花
- */
-- (void)hiddenProgressHUD;
 
 @end

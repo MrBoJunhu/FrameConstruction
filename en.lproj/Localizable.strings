@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  FrameConstruction
+
+  Created by BillBo on 2017/9/5.
+  Copyright © 2017年 BillBo. All rights reserved.
+*/
+"Could not connect to the server" = "Could not connect to the server";
+"time out" = "time out";
+"BadServerResponse" = "Bad Server Response";
+"NetworkError_Unknown" = "Network Error Unknown";
+"Request_Success" = "request success";

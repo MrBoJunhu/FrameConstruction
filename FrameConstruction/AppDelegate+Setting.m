@@ -10,9 +10,9 @@
 
 @implementation AppDelegate (Setting)
 
-- (void)test {
+- (void)settingAppStyle {
     
-    NSLog(@"测试!");
+
     //导航栏标题字体
     [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                           NSFontAttributeName : [UIFont systemFontOfSize:20],
@@ -21,21 +21,18 @@
                                                           }];
     //设置不透明
     [UINavigationBar appearance].translucent = YES;
+    
     //导航栏颜色
     [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
-    //
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-
-    //设置 barButtonItem 颜色
-//    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
    
+    //barButtonItem颜色
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     //工具栏
     [[UITabBar appearance] setBarTintColor:[UIColor redColor]];
    
     //工具栏背景色
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
-    
 
 }
 

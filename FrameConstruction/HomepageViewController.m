@@ -7,7 +7,10 @@
 //
 
 #import "HomepageViewController.h"
+
 #import "SecondUITabBarController.h"
+
+#import "ThirdPlatformLoginView.h"
 @interface HomepageViewController ()
 
 @end
@@ -22,7 +25,19 @@
     
     [self cleanBradgeAtIndex:0];
     
+    
 }
+
+- (void)loginTest {
+ 
+    ThirdPlatformLoginView *loginV = [ThirdPlatformLoginView platformLoginViewWithTitles:@[@"QQ",@"微信",@"微博"] images:@[@"qq",@"wechat",@"weibo"] clickPlatform:^(NSUInteger index) {
+        
+    }];
+    
+    [loginV show];
+    
+}
+
 
 - (void)viewDidLoad {
   
@@ -33,7 +48,13 @@
     [self setRightNavigationItem];
     
     NSLog(@"%@", [NSDate bb_dateWithDateString:@"2017-12-23 11:32:21" formatterString:@"YYYY-MM-dd hh:mm:ss"]);
-        
+    
+    UIButton *login = [UIButton buttonWithFrame:CGRectMake(0, 0, 100, 40) backgroundColor:[UIColor whiteColor] title:@"第三方登录" titleColor:[UIColor lightGrayColor] highlightedColor:[UIColor lightTextColor] target:self selector:@selector(loginTest)];
+    
+    login.center = self.view.center;
+    
+    [self.view addSubview:login];
+
 }
 
 - (void)clickRightItem {
