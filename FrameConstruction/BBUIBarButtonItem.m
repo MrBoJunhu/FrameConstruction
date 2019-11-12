@@ -1,10 +1,3 @@
-//
-//  BBUIBarButtonItem.m
-//  LaiApp_OC
-//
-//  Created by BillBo on 17/2/10.
-//  Copyright © 2017年 Softtek. All rights reserved.
-//
 
 #import "BBUIBarButtonItem.h"
 
